@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio HTML</title>
+  </head>
+  <body>
+    <h1>Cadastro de receita/despesas</h1>
+    <form>
+      <div>
+        <label for="descricao"><b>Descrição</b></label>
+        <div>
+          <input type="text" name="descricao" id="descricao" />
+        </div>
+      </div>
+      <div>
+        <label for="observacao"><b>Observação</b></label>
+        <div>
+          <textarea name="observacao" id="observacao">teste</textarea>
+        </div>
+      </div>
+      <div>
+        <span><b>Tipo:</b></span>
+        <div>
+          <input id="tipo-receita" type="radio" name="tipo" value="receita" />
+          <label for="tipo-receita">Receita</label>
+          <input id="tipo-despesa" type="radio" name="tipo" value="despesas" />
+          <label for="tipo-despesa">Despesa</label>
+        </div>
+      </div>
+      <div>
+        <label for="valor"><b>Valor</b></label>
+        <div>
+          <input
+            type="number"
+            name="valor"
+            id="valor"
+            placeholder="Digite o valor"
+          />
+        </div>
+      </div>
+      <div>
+        <label for="consolidado"><b>Consolidado?</b></label>
+        <div>
+          <input type="checkbox" name="consolidado" id="consolidado" />
+        </div>
+      </div>
+      <div>
+        <label for="conta"><b>Conta Associada</b></label>
+        <div>
+          <select name="conta" id="conta">
+            <option value="">Nenhum</option>
+            <option value="bb">Conta corrente BB</option>
+            <option value="nu">Conta corrente Nubank</option>
+            <option value="it">Conta corrente Itaú</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <button type="submit">Salvar</button>
+        <button type="button">Cancelar</button>
+      </div>
+    </form>
+  </body>
+</html>

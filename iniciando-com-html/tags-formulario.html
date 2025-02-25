@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tags de formulários</title>
+  </head>
+  <body>
+    <h1>Tags de formulários</h1>
+    <form action="salvar">
+      <input
+        name="nome"
+        type="text"
+        value=""
+        placeholder="Digite seu nome"
+      /><br />
+      <input type="email" name="email" placeholder="Digite seu email" /><br />
+      <input
+        type="password"
+        name="senha"
+        placeholder="Digite sua senha"
+      /><br />
+      <input
+        type="number"
+        name="dependentes"
+        min="0"
+        max="10"
+        placeholder="Quantidade de Dependentes"
+      /><br />
+      <input
+        type="tel"
+        name="telefone"
+        placeholder="Digite seu telefone"
+      /><br />
+      <div>
+        <label for="exterior">Mora no exterior?</label>
+        <input type="checkbox" name="exterior" id="exterior" />
+      </div>
+      <div>
+        <div>
+          <label for="sal2000">Até 2000</label>
+          <input id="sal2000" type="radio" name="salario" value="2000" />
+        </div>
+        <div>
+          <label for="sal4000">Até 4000</label>
+          <input id="sal4000" type="radio" name="salario" value="4000" />
+        </div>
+        <div>
+          <label for="sal6000">Até 6000</label>
+          <input id="sal6000" type="radio" name="salario" value="6000" />
+        </div>
+        <div>
+          <label for="sal6001">Mais de 6001</label>
+          <input id="sal6001" type="radio" name="salario" value="6001" />
+        </div>
+      </div>
+      <select name="tipo">
+        <option value="esp">Especial</option>
+        <option value="com">Comum</option>
+        <option value="imp">Importante</option>
+        <option value="vip">Vip</option>
+      </select>
+      <button>Salvar</button>
+    </form>
+  </body>
+</html>
