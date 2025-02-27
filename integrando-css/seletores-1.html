@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Seletores CSS</title>
+    <style>
+      div {
+        font-size: 30px;
+      }
+
+      #primeiro-texto {
+        font-size: 45px;
+        font-weight: 700;
+      }
+
+      .destaque {
+        background-color: red;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      [chic] {
+        letter-spacing: 10px;
+      }
+
+      button {
+        background-color: #0b5bc5;
+        color: white;
+        padding: 8px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Seletores #1</h1>
+
+    <div id="primeiro-texto">Texto #1</div>
+    <div class="destaque">Texto #2</div>
+    <div>Texto #3</div>
+    <div>Texto #3</div>
+    <div class="destaque" chic>Texto #4</div>
+    <div>Texto #5</div>
+
+    <div>
+      <button>Salvar</button>
+    </div>
+
+    <a href="./exercicios.html">Voltar</a>
+  </body>
+</html>

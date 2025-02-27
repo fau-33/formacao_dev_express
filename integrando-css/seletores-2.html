@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Seletores CSS</title>
+    <style>
+      button {
+        background-color: #0b5bc5;
+        color: white;
+        padding: 8px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #02387f;
+      }
+      span:nth-child(1) {
+        background-color: purple;
+        color: white;
+        padding: 10px;
+      }
+      div > span > p.texto-importante {
+        background-color: seagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Seletores #1</h1>
+
+    <div>
+      <button>Salvar</button>
+    </div>
+
+    <div>
+      <span>teste</span>
+      <span>
+        <h3>exemplo de texto</h3>
+        <p class="texto-importante">texto</p>
+      </span>
+    </div>
+
+    <a href="./exercicios.html">Voltar</a>
+  </body>
+</html>
