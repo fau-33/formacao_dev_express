@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card com Flexbox</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        font-family: Arial, sans-serif;
+      }
+
+      .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 350px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .card-content {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .card h2 {
+        margin: 0;
+        color: #333;
+      }
+
+      .card p {
+        margin: 0;
+        color: #666;
+      }
+
+      .btn {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        transition: background-color 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #0056b3;
+      }
+
+      /* Estilos do rodapé */
+      .card-footer {
+        background-color: #f8f9fa;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        border-top: 1px solid #ddd;
+      }
+
+      .card-footer img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        src="https://img.freepik.com/fotos-gratis/arranjo-de-colecao-estacionario-moderno_23-2149309643.jpg"
+        alt="Imagem do Card"
+      />
+      <div class="card-content">
+        <h2>Kit coleção 2025</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia quas
+          voluptatibus labore nobis, at ad repudiandae cum laborum quo totam
+          reiciendis iusto quam, ullam sit mollitia aperiam eveniet quisquam
+          voluptatem.
+        </p>
+      </div>
+      <div class="card-footer">
+        <!-- 5 estrelas pequenas -->
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQUItxtM4rD_3QX7uscNZDVU7FGjfrbdCfrA&s"
+          alt="Estrela"
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQUItxtM4rD_3QX7uscNZDVU7FGjfrbdCfrA&s"
+          alt="Estrela"
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQUItxtM4rD_3QX7uscNZDVU7FGjfrbdCfrA&s"
+          alt="Estrela"
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQUItxtM4rD_3QX7uscNZDVU7FGjfrbdCfrA&s"
+          alt="Estrela"
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQUItxtM4rD_3QX7uscNZDVU7FGjfrbdCfrA&s"
+          alt="Estrela"
+        />
+      </div>
+    </div>
+  </body>
+</html>
