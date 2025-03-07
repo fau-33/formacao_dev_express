@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flexbox</title>
+    <style>
+      .flexbox {
+        display: flex;
+      }
+      .externo {
+        background-color: crimson;
+        border: 2px solid #000;
+        height: 400px;
+      }
+      .interno {
+        height: 50px;
+        background-color: darkturquoise;
+        border: 2px solid #000;
+      }
+      .crescer-1 {
+        flex-grow: 1;
+      }
+      .crescer-2 {
+        flex-grow: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox #4</h1>
+
+    <span>Flex Container</span>
+    <div class="externo flexbox">
+      <div class="interno crescer-1">1</div>
+      <div class="interno crescer-2">2</div>
+      <div class="interno crescer-1">3</div>
+    </div>
+
+    <a href="./exercicios.html">Voltar</a>
+  </body>
+</html>

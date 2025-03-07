@@ -1,33 +1,110 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <title>Exercícios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercícios CSS</title>
+    <style>
+      /* Reset básico */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #f5f7fa;
+        padding: 2rem;
+        min-height: 100vh;
+      }
+
+      h1 {
+        color: #2d3436;
+        text-align: center;
+        margin-bottom: 2.5rem;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        position: relative;
+      }
+
+      h1::after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 3px;
+        background: #00cec9;
+        margin: 1rem auto;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .card {
+        background: white;
+        border-radius: 12px;
+        padding: 2rem;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .card a {
+        color: #2d3436;
+        text-decoration: none;
+        font-weight: 600;
+        display: block;
+        padding: 1.2rem;
+        border-radius: 8px;
+        transition: background 0.3s ease;
+      }
+
+      .card a:hover {
+        background: #00cec9;
+        color: white;
+        border-radius: 8px;
+      }
+
+      /* Responsividade */
+      @media (max-width: 768px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>CSS - Lista de exercícios</h1>
-    <div>
-      <a href="./integracao-1.html">integracao #1</a>
-    </div>
-    <div>
-      <a href="./integracao-2.html">integracao #2</a>
-    </div>
-    <div>
-      <a href="./integracao-3.html">integracao #3</a>
-    </div>
-    <div>
-      <a href="./seletores-1.html">seletores #1</a>
-    </div>
-    <div>
-      <a href="./seletores-2.html">seletores #2</a>
-    </div>
-    <div>
-      <a href="./box-model.html">box model</a>
-    </div>
-    <div>
-      <a href="./position-1.html">position #1</a>
-    </div>
-    <div>
-      <a href="./position-2.html">position #2</a>
+    <h1>Exercícios de CSS</h1>
+
+    <div class="container">
+      <div class="card"><a href="./integracao-1.html">Integração #1</a></div>
+      <div class="card"><a href="./integracao-2.html">Integração #2</a></div>
+      <div class="card"><a href="./integracao-3.html">Integração #3</a></div>
+      <div class="card"><a href="./seletores-1.html">Seletores #1</a></div>
+      <div class="card"><a href="./seletores-2.html">Seletores #2</a></div>
+      <div class="card"><a href="./box-model.html">Box Model</a></div>
+      <div class="card"><a href="./position-1.html">Position #1</a></div>
+      <div class="card"><a href="./position-2.html">Position #2</a></div>
+      <div class="card"><a href="./display-1.html">Display #1</a></div>
+      <div class="card"><a href="./display-flex-1.html">Flexbox #1</a></div>
+      <div class="card"><a href="./display-flex-2.html">Flexbox #2</a></div>
+      <div class="card"><a href="./display-flex-3.html">Flexbox #3</a></div>
+      <div class="card"><a href="./display-flex-4.html">Flexbox #4</a></div>
+      <div class="card"><a href="./display-flex-5.html">Flexbox #5</a></div>
+      <div class="card"><a href="./display-flex-6.html">Flexbox #6</a></div>
     </div>
   </body>
 </html>

@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flexbox</title>
+    <style>
+      .flexbox {
+        display: flex;
+        flex-wrap: wrap;
+        /* main axis - eixo principal */
+        justify-content: center;
+        /* cross axis - eixo transversal */
+        align-items: center;
+      }
+      .externo {
+        background-color: crimson;
+        border: 5px solid #000;
+        height: 400px;
+      }
+      .interno {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: darkturquoise;
+        border: 5px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox #2</h1>
+
+    <span>Flex Container</span>
+    <div class="externo flexbox">
+      <div class="interno"></div>
+      <div class="interno"></div>
+      <div class="interno"></div>
+    </div>
+
+    <a href="./exercicios.html">Voltar</a>
+  </body>
+</html>
