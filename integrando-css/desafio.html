@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio CSS</title>
+    <style>
+      html {
+        background-color: #000;
+        color: #fff;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      a:visited {
+        color: #ff00ff;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+      }
+      .produto-item {
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        height: 400px;
+        background-color: #222;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .produto-info {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px;
+      }
+      .produto-info > h2 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 400;
+      }
+      .produto-info > p {
+        margin: 0;
+        font-size: 12px;
+        font-weight: 400;
+        color: #ccc;
+        text-align: justify;
+      }
+      .estrela {
+        width: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Desafio CSS</h1>
+    <div class="produto-item">
+      <img
+        src="https://img.freepik.com/fotos-gratis/arranjo-de-colecao-estacionario-moderno_23-2149309643.jpg"
+        alt="Imagem do produto"
+      />
+      <div class="produto-info">
+        <h2>Kit Antenado 2025</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, ut
+          quae, atque itaque obcaecati adipisci ex amet hic maxime sunt eos rem
+          quidem voluptate reprehenderit vel nisi. Quaerat, iusto nostrum?
+        </p>
+        <div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQUItxtM4rD_3QX7uscNZDVU7FGjfrbdCfrA&s"
+            alt="Estrela"
+            class="estrela"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQUItxtM4rD_3QX7uscNZDVU7FGjfrbdCfrA&s"
+            alt="Estrela"
+            class="estrela"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQUItxtM4rD_3QX7uscNZDVU7FGjfrbdCfrA&s"
+            alt="Estrela"
+            class="estrela"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQUItxtM4rD_3QX7uscNZDVU7FGjfrbdCfrA&s"
+            alt="Estrela"
+            class="estrela"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQUItxtM4rD_3QX7uscNZDVU7FGjfrbdCfrA&s"
+            alt="Estrela"
+            class="estrela"
+          />
+        </div>
+      </div>
+    </div>
+    <a href="http:./exercicios.html">Voltar</a>
+  </body>
+</html>
